@@ -1,13 +1,5 @@
-[build]
-  publish = "/"  # Must point to a local directory, not a URL
-  command = ""   # Correct - no build command needed
-
 [[redirects]]
-  from = "/aiAbout"
-  to = "/"
-  status = 200
-
-[[redirects]]
-  from = "/aiAbout/*"
-  to = "/:splat"
-  status = 200
+  from = "/*"
+  to = "https://cornerroom.co.za/AIabout/:splat"
+  status = 301
+  force = true  # Hides Netlify URL
