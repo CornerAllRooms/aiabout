@@ -3,3 +3,4 @@
   to = "https://cornerroom.co.za/AIabout/:splat"
   status = 301
   force = true  # Hides Netlify URL
+   
