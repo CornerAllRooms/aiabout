@@ -1,0 +1,13 @@
+[build]
+  publish = "/"  # Must point to a local directory, not a URL
+  command = ""   # Correct - no build command needed
+
+[[redirects]]
+  from = "/aiAbout"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/aiAbout/*"
+  to = "/:splat"
+  status = 200
