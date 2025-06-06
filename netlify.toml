@@ -1,18 +1,5 @@
-[build]
-  publish = "/"
-  command = "echo 'Forcing fresh deployment'"
-
-# Cache-control headers (force browsers/CDN to fetch fresh content)
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Cache-Control = "no-cache, no-store, must-revalidate"
-    Pragma = "no-cache"
-    Expires = "0"
-
-# Redirects (your existing rules)
 [[redirects]]
-  from = "/aiAbout"
-  to = "/"
-  status = 200
-  force = true
+  from = "/*"
+  to = "https://cornerroom.co.za/aiAbout:splat"
+  status = 301
+  force = true  # Hides Netlify URL
