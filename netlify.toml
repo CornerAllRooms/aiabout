@@ -6,4 +6,4 @@
   from = "https://aiabout.cornerroom.co.za"
   to = "https:cornerroom.co.za/aiAbout"
   status = 301
-
+force = true
