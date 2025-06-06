@@ -1,5 +1,13 @@
+[build]
+  publish = "/"
+
+# Corrected redirect rules
 [[redirects]]
-  from = "/*"
-  to = "https://cornerroom.co.za/aiAbout:splat"
-  status = 301
-  force = true  # Hides Netlify URL
+  from = "/aiAbout"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/aiAbout/*"
+  to = "/:splat"
+  status = 200
