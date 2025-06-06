@@ -6,9 +6,10 @@
   from = "/aiAbout"
   to = "/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/aiAbout/*"
   to = "/:splat"
   status = 200
-  force = true
+
