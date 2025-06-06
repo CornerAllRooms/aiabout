@@ -3,11 +3,7 @@
 
 # Corrected redirect rules
 [[redirects]]
-  from = "/aiAbout"
-  to = "/"
+  from = "https://aiabout.cornerroom.co.za"
+  to = "https:cornerroom.co.za/aiAbout"
   status = 301
 
-[[redirects]]
-  from = "/aiAbout/*"
-  to = "/:splat"
-  status = 301
